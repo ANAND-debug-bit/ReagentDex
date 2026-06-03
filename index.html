@@ -40,14 +40,55 @@
     <div class="reagent-list" id="reagent-list">
   
     </div>
+
 </main>
 
 
- 
-  
-  
+<main id="detail-view" class="view">
+    <div class="breadcrumb">
+      <button class="back-btn" id="back-to-list">← Reagents</button>
+      <span class="breadcrumb-sep">/</span>
+      <span id="detail-topic-name"></span>
+      <span class="breadcrumb-sep">/</span>
+      <span id="detail-reagent-name"></span>
+    </div>
 
-  <script src="data.js"></script>
+
+
+<div class="detail-card">
+      <div class="detail-header">
+        <div class="detail-icon">⚗</div>
+        <div>
+          <h2 id="detail-title"></h2>
+          <p id="detail-subtitle" class="detail-subtitle"></p>
+        </div>
+      </div>
+
+
+      <div class="detail-body">
+        <div class="detail-section" id="detail-uses-section">
+          <h3>Uses / Reactions</h3>
+          <ul id="detail-uses"></ul>
+        </div>
+
+
+        <div class="detail-section" id="detail-notes-section">
+          <h3>Important Info</h3>
+          <p id="detail-notes"></p>
+        </div>
+
+
+        <div class="detail-section" id="detail-examples-section">
+          <h3>Examples</h3>
+          <ul id="detail-examples"></ul>
+        </div>
+    </div>
+
+    </div>
+  </main>
+
+
+<script src="data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
